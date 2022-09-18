@@ -1,0 +1,12 @@
+C:\Users\Onur\Desktop\Windows Form Projelerim\CoreDemo\EntityLayer\bin\Debug\net5.0\EntityLayer.deps.json
+C:\Users\Onur\Desktop\Windows Form Projelerim\CoreDemo\EntityLayer\bin\Debug\net5.0\EntityLayer.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\CoreDemo\EntityLayer\bin\Debug\net5.0\EntityLayer.pdb
+C:\Users\Onur\Desktop\Windows Form Projelerim\CoreDemo\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\Onur\Desktop\Windows Form Projelerim\CoreDemo\EntityLayer\obj\Debug\net5.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Onur\Desktop\Windows Form Projelerim\CoreDemo\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\Onur\Desktop\Windows Form Projelerim\CoreDemo\EntityLayer\obj\Debug\net5.0\EntityLayer.AssemblyInfo.cs
+C:\Users\Onur\Desktop\Windows Form Projelerim\CoreDemo\EntityLayer\obj\Debug\net5.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\Onur\Desktop\Windows Form Projelerim\CoreDemo\EntityLayer\obj\Debug\net5.0\EntityLayer.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\CoreDemo\EntityLayer\obj\Debug\net5.0\refint\EntityLayer.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\CoreDemo\EntityLayer\obj\Debug\net5.0\EntityLayer.pdb
+C:\Users\Onur\Desktop\Windows Form Projelerim\CoreDemo\EntityLayer\obj\Debug\net5.0\ref\EntityLayer.dll

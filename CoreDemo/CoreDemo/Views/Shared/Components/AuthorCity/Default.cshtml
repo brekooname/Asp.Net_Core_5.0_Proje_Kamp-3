@@ -1,0 +1,15 @@
+﻿@model IEnumerable<CoreDemo.Models.AuthorCityModel>
+@*<label for="cars">Şehrini Seç : </label>*@
+
+
+<br />
+<p>Şehrinizi Seçiniz : </p>
+
+@foreach (var item in Model)
+{
+
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label> @item.City</label>
+    <br>
+
+}

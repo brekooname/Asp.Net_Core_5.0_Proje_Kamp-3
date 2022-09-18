@@ -1,0 +1,59 @@
+﻿@model CoreDemo.Models.AddProfileImage
+
+@{
+    ViewData["Title"] = "AuthorAdd";
+    Layout = "~/Views/Shared/AuthorLayout.cshtml";
+}
+
+<form class="form-group" method="post" enctype="multipart/form-data">
+
+    @using (Html.BeginForm("AuthorEditProfile", "Author", FormMethod.Post))
+    {<div class="col-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Yazar Profil Bilgilerini Düzenleme</h4>
+                    @Html.HiddenFor(x => x.AuthorID, new { @class = "form-control" })
+                    <div class="forms-sample">
+                        <div class="form-group">
+                            <label for="exampleInputName1">İsim - Soyisim</label>
+                            <input type="text" class="form-control" id="exampleInputName1" asp-for="AuthorName" placeholder="İsim - Soyisim">
+                            @Html.ValidationMessageFor(x => x.AuthorName, "", new { @class = "text-danger" })
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail3">E-Mail Adresi</label>
+                            <input type="email" class="form-control" id="exampleInputEmail3" asp-for="AuthorMail" placeholder="E-Mail Adresi">
+                            @Html.ValidationMessageFor(x => x.AuthorMail, "", new { @class = "text-danger" })
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword4">Şifre</label>
+                            @Html.PasswordFor(x => x.AuthorPassword, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.AuthorPassword, "", new { @class = "text-danger" })
+
+                        </div>
+
+                        <div class="form-group">
+                            <label>Yazar Görseli</label>
+                            <input type="file" name="AuthorImage"/>
+                        </div>
+                        @*<div class="form-group">
+                                <label for="exampleInputCity1">City</label>
+                                <input type="text" class="form-control" id="exampleInputCity1" placeholder="Location">
+                            </div>*@
+                        <div class="form-group">
+                            <label for="exampleTextarea1">Yazar Hakkında</label>
+                            <textarea class="form-control" id="exampleTextarea1" asp-for="AuthorAbout" , rows="10"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gradient-primary mr-2">Kaydet</button>
+                        <button class="btn btn-light">İptal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+
+
+</form>
+    

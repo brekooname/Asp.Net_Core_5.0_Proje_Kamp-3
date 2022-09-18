@@ -1,0 +1,24 @@
+﻿@model IEnumerable<EntityLayer.Concrete.Category>
+
+
+<div class="tech-btm">
+    <h4>Kategoriler</h4>
+   
+    @foreach (var item in Model)
+    {
+        int count = 0;
+        if (item.CategoryStatus == true)
+        {
+            count++;
+        }
+
+        <ul class="list-group single">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                @item.CategoryName
+                <span class="badge badge-primary badge-pill">Model.Count()</span>
+                
+            </li>
+
+        </ul>
+        }
+</div>

@@ -1,0 +1,64 @@
+﻿@model EntityLayer.Concrete.Blog
+
+@{
+    ViewData["Title"] = "BlogAdd";
+    Layout = "~/Views/Shared/AuthorLayout.cshtml";
+}
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<a href="~/lib/jquery/dist/jquery.min.map"></a>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+
+<h1>Yeni Blog</h1>
+<br />
+@using (Html.BeginForm("BlogAdd", "Blog", FormMethod.Post))
+{
+    @Html.Label("Blog Başlığı")
+    @Html.TextBoxFor(x => x.BlogTitle, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.BlogTitle, "", new { @class = "text-danger" })
+
+
+    <br />
+
+    @Html.Label("Blog Görseli")
+    @Html.TextBoxFor(x => x.BlogImage, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.BlogImage, "", new { @class = "text-danger" })
+
+
+
+    <br />
+
+    @Html.Label("Blog Küçük Görseli")
+    @Html.TextBoxFor(x => x.BlogThumbnailImage, new { @class = "form-control" })
+
+    <br />
+
+    @Html.Label("Kategori")
+    <br />
+    @Html.DropDownListFor(x => x.CategoryID, (List<SelectListItem>)ViewBag.cv, new { @class = "form-control" })
+
+    <br />
+
+    <br />
+    @Html.Label("Blog İçeriği")
+    @Html.TextAreaFor(x => x.BlogContent, 15, 3, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.BlogContent, "", new { @class = "text-danger" })
+
+    <br />
+    <br />
+
+    <button class="btn btn-info" id="btn1">Yazıyı Kaydet</button>
+
+    <script>
+        $('#btn1').click(function () {
+
+            swal("Blog'unuz Sisteme Yüklenmiştir. İyi Okumalar !");
+        });
+
+    </script>
+
+
+
+}
